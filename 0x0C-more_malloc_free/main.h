@@ -1,5 +1,3 @@
-lines (9 sloc)  325 Bytes
-
 #ifndef _MAIN_
 #define _MAIN_
 
