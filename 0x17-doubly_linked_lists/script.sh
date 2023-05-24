@@ -8,5 +8,3 @@ for file in "$directory"/*; do
         "$command_to_run" "$file"
     fi
 done
-
-
