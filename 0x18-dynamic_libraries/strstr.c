@@ -13,12 +13,11 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-    char *h_pos, *n_pos;
-
+       	char *h_pos, *n_pos;
     do
     {
-        h_pos = haystack;
-        n_pos = needle;
+	 h_pos = haystack;
+	 n_pos = needle;
         do
         {
             if (!*n_pos)
