@@ -23,8 +23,8 @@ unsigned int _strspn(char *s, char *accept)
 	  if (s[i]  == *accept_pos)
 	    break;
 	}
-      f (!*accept_pos)
-	break  }
+      if (!*accept_pos)
+	break;
+    }
   return (i);
-}i;
-  }
+}
