@@ -13,20 +13,19 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-       	char *h_pos, *n_pos;
-    do
-    {
-	 h_pos = haystack;
-	 n_pos = needle;
-        do
-        {
-            if (!*n_pos)
-                return (haystack);
-            if (!*h_pos)
-                return (NULL);
-        } while (*h_pos++ == *n_pos++);
-        ++haystack;
-    } while (*haystack);
+  char *h_pos, *n_pos;
 
-    return (NULL);
+  do {
+    h_pos = haystack;
+    n_pos = needle;
+    do {
+      if (!*n_pos)
+	return (haystack);
+      if (!*h_pos)
+	return (NULL);
+    } while (*h_pos++ == *n_pos++);
+    ++haystack;
+  } while (*haystack);
+
+  return (NULL);
 }
