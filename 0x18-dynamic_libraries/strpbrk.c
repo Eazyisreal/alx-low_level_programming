@@ -10,15 +10,15 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-    char *accept_pos;
+  char *accept_pos;
 
-    for (; *s; ++s)
+  for ( ; *s; ++s)
     {
-        for (accept_pos = accept; *accept_pos; ++accept_pos)
-        {
-            if (*s == *accept_pos)
-                return (s);
-        }
+      for (accept_pos = accept; *accept_pos; ++accept_pos)
+	{
+	  if (*s == *accept_pos)
+	    return (s);
+	}
     }
-    return (NULL);
+  return (NULL);
 }

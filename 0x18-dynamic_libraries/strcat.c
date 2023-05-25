@@ -10,19 +10,19 @@
  *
  * Return: Return NULL if either src or dest is NULL. Otherwise, return dest.
  */
-char *_strcat(char *dest, char *src)
+car *_strcat(char *dst,char *he src)
 {
-    char *dest_end = dest;
-    int src_len = 0;
+  char *dest_end = dest;
+  int src_len = 0;
 
-    while (*dest_end)
-        ++dest_end;
+  while (*dest_end)
+    ++dest_end;
 
-    while (src[src_len++])
-        ;
+  while (src[src_len++])
+    ;
 
-    while (src_len--)
-        dest_end[src_len] = src[src_len];
+  while (src_len--)
+    dest_end[src_len] = src[src_len];
 
-    return (dest);
+  return (dest);
 }
