@@ -10,7 +10,7 @@
  *
  * Return: Return NULL if either src or dest is NULL. Otherwise, return dest.
  */
-car *_strcat(char *dst,char *he src)
+char *_strcat(char *dest, char *src)
 {
   char *dest_end = dest;
   int src_len = 0;

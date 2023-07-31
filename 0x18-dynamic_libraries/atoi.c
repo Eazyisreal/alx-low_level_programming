@@ -47,4 +47,4 @@ int _atoi(char *s)
       ++s;
     }
   return (n * sign);
-i}
+}
